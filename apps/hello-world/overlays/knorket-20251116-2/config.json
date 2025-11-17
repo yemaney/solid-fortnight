@@ -1,0 +1,11 @@
+{
+  "appName": "hello-world",
+  "userGivenName": "hello-world",
+  "destNamespace": "default",
+  "destServer": "https://34.123.118.123",
+  "srcPath": "apps/hello-world/overlays/knorket-20251116-2",
+  "srcRepoURL": "https://github.com/yemaney/solid-fortnight.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
