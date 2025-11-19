@@ -1,0 +1,17 @@
+# Example values for Trino Helm chart
+service:
+  type: ClusterIP
+
+coordinator:
+  replicas: 1
+  resources:
+    requests:
+      cpu: 1
+      memory: 2Gi
+
+worker:
+  replicas: 2
+  resources:
+    requests:
+      cpu: 1
+      memory: 2Gi
