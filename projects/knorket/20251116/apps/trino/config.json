@@ -2,8 +2,7 @@
   "appName": "trino",
   "userGivenName": "trino",
   "destNamespace": "trino",
-  "destServer": "https://kubernetes.default.svc",
-  "srcRepoURL": "https://charts.bitnami.com/bitnami",
-  "srcTargetRevision": "0.7.3",
+  "srcRepoURL": "https://trinodb.github.io/charts",
+  "srcTargetRevision": "1.41.0",
   "chartName": "trino"
 }
