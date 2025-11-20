@@ -63,13 +63,17 @@ spec:
         - /status
         kind: Application
       project: knorket-20251116
-      source:
+      sources:
+      - chart: '{{ chartName }}'
         repoURL: '{{ srcRepoURL }}'
-        chart: '{{ chartName }}'
         targetRevision: '{{ srcTargetRevision }}'
         helm:
           valueFiles:
-            - '{{path.directory}}/values.yaml'
+          - $values/values.yaml
+      - repoURL: https://github.com/yemaney/solid-fortnight.git
+        targetRevision: HEAD
+        ref: values
+        path: '{{path.directory}}'
       syncPolicy:
         automated:
           allowEmpty: true
