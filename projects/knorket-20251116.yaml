@@ -75,6 +75,8 @@ spec:
         ref: values
         # path: '{{path.directory}}'
       syncPolicy:
+        syncOptions:
+          - CreateNamespace=true
         automated:
           allowEmpty: true
           prune: true
