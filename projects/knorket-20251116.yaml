@@ -69,11 +69,11 @@ spec:
         targetRevision: '{{ srcTargetRevision }}'
         helm:
           valueFiles:
-          - $values/values.yaml
+          - $values/projects/knorket/20251116/apps/trino/values.yaml
       - repoURL: https://github.com/yemaney/solid-fortnight.git
         targetRevision: HEAD
         ref: values
-        path: '{{path.directory}}'
+        # path: '{{path.directory}}'
       syncPolicy:
         automated:
           allowEmpty: true
