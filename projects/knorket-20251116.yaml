@@ -48,12 +48,12 @@ spec:
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: '{{ appName }}'
-      name: '{{ appName }}'
+        app.kubernetes.io/name: '{{ name }}'
+      name: '{{ name }}'
       namespace: argocd
     spec:
       destination:
-        namespace: '{{ destNamespace }}'
+        namespace: '{{ namespace }}'
         server: 'https://136.113.178.119'
       ignoreDifferences:
       - group: argoproj.io
@@ -62,12 +62,12 @@ spec:
         kind: Application
       project: knorket-20251116
       sources:
-      - chart: '{{ chartName }}'
-        repoURL: '{{ srcRepoURL }}'
-        targetRevision: '{{ srcTargetRevision }}'
+      - chart: '{{ chart }}'
+        repoURL: '{{ repo }}'
+        targetRevision: '{{ version }}'
         helm:
           valueFiles:
-          - $values/{{valuesPath}}
+          - $values/{{values}}
       - repoURL: https://github.com/yemaney/solid-fortnight.git
         targetRevision: HEAD
         ref: values

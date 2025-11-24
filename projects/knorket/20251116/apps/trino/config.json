@@ -1,8 +1,8 @@
 {
-  "appName": "trino",
-  "destNamespace": "trino",
-  "srcRepoURL": "https://trinodb.github.io/charts",
-  "srcTargetRevision": "1.41.0",
-  "chartName": "trino",
-  "valuesPath": "projects/knorket/20251116/apps/trino/values.yaml"
+  "name": "trino",
+  "namespace": "trino",
+  "repo": "https://trinodb.github.io/charts",
+  "version": "1.41.0",
+  "chart": "trino",
+  "values": "projects/knorket/20251116/apps/trino/values.yaml"
 }
