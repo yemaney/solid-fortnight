@@ -1,6 +1,5 @@
 {
   "appName": "trino",
-  "userGivenName": "trino",
   "destNamespace": "trino",
   "srcRepoURL": "https://trinodb.github.io/charts",
   "srcTargetRevision": "1.41.0",
