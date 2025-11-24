@@ -69,11 +69,11 @@ spec:
         targetRevision: '{{ srcTargetRevision }}'
         helm:
           valueFiles:
-          - $values/{{path.directory}}/values.yaml
+          - $values/values.yaml
       - repoURL: https://github.com/yemaney/solid-fortnight.git
         targetRevision: HEAD
         ref: values
-        # path: '{{path.directory}}'
+        path: '{{path.directory}}'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true
