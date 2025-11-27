@@ -5,13 +5,13 @@ metadata:
     argocd.argoproj.io/sync-options: PruneLast=true
     argocd.argoproj.io/sync-wave: "-2"
   creationTimestamp: null
-  name: knorket-20251116
+  name: knorket-20251127
   namespace: argocd
 spec:
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
-  description: knorket-20251116 project
+  description: knorket-20251127 project
   destinations:
   - namespace: '*'
     server: '*'
@@ -29,13 +29,13 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
   creationTimestamp: null
-  name: knorket-20251116
+  name: knorket-20251127
   namespace: argocd
 spec:
   generators:
   - git:
       files:
-      - path: projects/knorket/20251116/apps/**/config.json
+      - path: projects/knorket/20251127/apps/**/config.json
       repoURL: "https://github.com/yemaney/solid-fortnight.git"
       requeueAfterSeconds: 20
       revision: ""
@@ -54,13 +54,13 @@ spec:
     spec:
       destination:
         namespace: '{{ namespace }}'
-        server: 'https://136.113.178.119'
+        server: 'https://35.202.153.204'
       ignoreDifferences:
       - group: argoproj.io
         jsonPointers:
         - /status
         kind: Application
-      project: knorket-20251116
+      project: knorket-20251127
       sources:
       - chart: '{{ chart }}'
         repoURL: '{{ repo }}'
