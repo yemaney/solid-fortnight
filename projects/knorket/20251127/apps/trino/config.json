@@ -4,5 +4,5 @@
   "repo": "https://trinodb.github.io/charts",
   "version": "1.41.0",
   "chart": "trino",
-  "values": "projects/knorket/20251116/apps/trino/values.yaml"
+  "values": "projects/knorket/20251127/apps/trino/values.yaml"
 }
